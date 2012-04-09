@@ -1,21 +1,33 @@
 
+define('backgammon/gamemodel',[],function() {
 
-$.fn.alpha = function() {
-    return this.append('<p>Alpha is Go!</p>');
-};
-define('jquery.alpha',[], function(){});
+		return {
+			game: "backgammon"
+		}
+		
+	}
+);
+define('backgammon/main',[ "./gamemodel" ],
+	function( model ) {
 
-$.fn.beta = function() {
-    return this.append('<p>Beta is Go!</p>');
-};
+		return {
+			game: model.game
+		}
 
-define("jquery.beta", function(){});
+	}
+);
+require(
+	[ "jquery", "backgammon/main" ],
+	function( $, bgm ) {
+		
+	    //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
+	    $( function( ) {
+	        // alert( "game? " + bgm.game );
 
-require(["jquery", "jquery.alpha", "jquery.beta"], function($) {
-    //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
-    $(function() {
-        $('body').alpha().beta();
-    });
-});
+	    } );
 
-define("main", function(){});
+		$( 'body' ).append( '<h2>' + bgm.game + '</h2>' );
+
+	}
+);
+//define('main',[], function(){});

@@ -8,12 +8,13 @@
 
     paths: {
         "jquery": "require-jquery"
+        //"backgammon-main": "backgammon/main"
     },
 
     modules: [
         {
             name: "main",
-            exclude: ["jquery"]
+            exclude: [ "jquery", "jrc" ]
         }
     ]
 })

@@ -1,20 +1,15 @@
+require(
+	[ "jquery", "backgammon/main" ],
+	function( $, bgm ) {
+		
+	    //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
+	    $( function( ) {
+	        // alert( "game? " + bgm.game );
 
-$.fn.alpha = function() {
-    return this.append('<p>Alpha is Go!</p>');
-};
-define("jquery.alpha", function(){});
+	    } );
 
-$.fn.beta = function() {
-    return this.append('<p>Beta is Go!</p>');
-};
+		$( 'body' ).append( '<h2>' + bgm.game + '</h2>' );
 
-define("jquery.beta", function(){});
-
-require(["jquery", "jquery.alpha", "jquery.beta"], function($) {
-    //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
-    $(function() {
-        $('body').alpha().beta();
-    });
-});
-
-define("main", function(){});
+	}
+);
+//define("main", function(){});
