@@ -1,10 +1,1 @@
-define(
-	[ "./gamemodel" ],
-	function( model ) {
-
-		return {
-			game: model.game
-		}
-
-	}
-);
+define(["./gamemodel"],function(a){var b=new a;return{game:b.game}})

@@ -1,9 +1,11 @@
 define(
 	function() {
 
-		return {
-			game: "backgammon"
+		return function() {
+			
+			this.game = "backgammon, no really";
+
 		}
-		
+
 	}
 );

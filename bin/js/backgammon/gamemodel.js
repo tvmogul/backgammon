@@ -1,9 +1,1 @@
-define(
-	function() {
-
-		return {
-			game: "backgammon"
-		}
-		
-	}
-);
+define(function(){return function(){this.game="backgammon, no really"}})
