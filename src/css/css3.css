@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import url( "yui_reset_3.4.1.css" );
+
+/* Actual CSS */
+
+body {
+	background-color: #cccccc;
+	font-size: 63%;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+div#container {
+	position: fixed;
+	left: 50%;
+	margin: 0 0 0 -200px;
+}
+
+form {
+	
+}
+
+form fieldset {
+	width: 400px;
+}
+
+form legend, form input[type="button"], form input[type="reset"] {
+	font-weight: bold;
+	font-size: 1.6em;
+}
+
+form label {
+	display: block;
+	font-size: 1.2em;
+	width: 150px;
+	clear: left;
+	float: left;
+}
+
+form input[type="range"] {
+	clear: none;
+	width: 200px;
+	height: 10px;
+	float: left;
+}
+
+form span.valueDisplay {
+	display: block;
+	clear: none;
+	float: left;
+	width: 50px;
+	font-size: 1.2em;
+	text-align: center;
+}
