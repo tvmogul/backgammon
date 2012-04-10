@@ -1,1 +1,1 @@
-define(function(){return{positions:[2,0,0,0,0,-5,0,-3,0,0,0,5,-5,0,0,0,3,0,5,0,0,0,0,-2]}})
+define(function(){return function(){this.createPositions=function(){return[2,0,0,0,0,-5,0,-3,0,0,0,5,-5,0,0,0,3,0,5,0,0,0,0,-2]}}})

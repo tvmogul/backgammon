@@ -1,11 +1,13 @@
 define(
 	[ "./gamefactory" ],
-	function( gf ) {
+	function( GameFactory ) {
+
+		var gf = new GameFactory();
 
 		return function() {
 			
 			this.game = "backgammon, no really";
-			this.positions = gf.positions;
+			this.positions = gf.createPositions();
 
 		}
 
