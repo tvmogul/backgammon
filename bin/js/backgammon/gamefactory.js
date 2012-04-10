@@ -1,0 +1,1 @@
+define(function(){return{positions:["pos1","pos2"]}})
