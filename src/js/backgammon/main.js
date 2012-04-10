@@ -5,7 +5,8 @@ define(
 		var model = new GameModel();
 
 		return {
-			game: model.game
+			game: model.game,
+			positions: model.positions
 		}
 
 	}

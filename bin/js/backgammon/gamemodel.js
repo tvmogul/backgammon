@@ -1,1 +1,1 @@
-define(function(){return function(){this.game="backgammon, no really"}})
+define(["./gamefactory"],function(a){return function(){this.game="backgammon, no really",this.positions=a.positions}})

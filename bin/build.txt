@@ -1,6 +1,7 @@
 
 js/main.js
 ----------------
+js/backgammon/gamefactory.js
 js/backgammon/gamemodel.js
 js/backgammon/main.js
 js/main.js

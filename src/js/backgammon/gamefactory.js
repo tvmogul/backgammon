@@ -1,10 +1,9 @@
 define(
 	function() {
 
-		// var positions = [ "pos1", "pos2" ];
-
 		return {
-			positions: [ "pos1", "pos2" ]
+			// Initial positions for playing pieces
+			positions: [ 2, 0, 0, 0, 0, -5, 0, -3, 0, 0, 0, 5, -5, 0, 0, 0, 3, 0, 5, 0, 0, 0, 0, -2 ]
 		}
 		
 	}
